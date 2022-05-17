@@ -53,3 +53,28 @@ what you want to make happen if its true
 
 
 the names in the front end should be properly defined if they are data types that are going to be taken into the backend
+
+
+
+HTTP requests(method not allowed)
+these are various call back methods
+-get- is to load or retrive information
+-post- database or state change
+-put
+-delete
+-update
+ the point of these request is to know what type of request are being sent to your website
+
+by default after inputing methods into the python request but you can other requests 
+the request variables holds access to the request sent by the form
+
+
+a MultiDict is a sub-class of Dictionary that can contain multiple values for the same key, unlike normal Dictionaries.  It is used because some form elements have multiple values for the same key and it saves the multiple values of a key in form of a list.
+
+    "data = request.form
+    print(data) "put this into th request route line to see if the request is entering 
+
+message flashing 
+when using category , you can name the error or success messages how ever you like
+
+
