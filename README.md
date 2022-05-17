@@ -43,3 +43,8 @@ def home():
 
     and at the front end you will use a python method codde
     like {{ text }} and your variable should be able to be called from the back-end to the front
+
+to write an if statement in the html section
+{% if  boolean == True %}
+what you want to make happen if its true 
+{% endif % }
