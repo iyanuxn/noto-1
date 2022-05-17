@@ -40,6 +40,12 @@
 
         </div>
     </nav>
+    {% with messages = get_flashed_messages(with_categories=true)%}
+    {% if messages %}
+     {% for message in messages%}
+     {% endfor %}
+    {% endif %}
+    {% endwith %}
     <div class="container"></div>
     {% block content %}
     {% endblock %}
