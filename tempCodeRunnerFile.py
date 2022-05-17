@@ -1,0 +1,1 @@
+from website.__inti__ import create_app
