@@ -48,3 +48,8 @@ to write an if statement in the html section
 {% if  boolean == True %}
 what you want to make happen if its true 
 {% endif % }
+
+
+
+
+the names in the front end should be properly defined if they are data types that are going to be taken into the backend
