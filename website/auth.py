@@ -34,9 +34,9 @@ def sign_up():
         elif not re.search('[0-9]', password1 ):
             flash('password must contain at least 1 number', category='error')
         elif not re.search('[A-Z]',password1):
-            flash('password must contain at least 1 captial letter', category='error')
+            flash('password must contain at least 1 capital letter', category='error')
         elif not re.search('[!@#$]',password1):
-            flash('password must contain at least 1 captial letter', category='error')
+            flash('password must contain at least 1  special character (!@#$)', category='error')
         else:
             flash('Account has been created', category='success')
         
