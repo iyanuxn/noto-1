@@ -83,5 +83,23 @@ to create a class for data to be stored
 class ..class name(db.model) It will inherit it from db.model
 then add the foreign keys(note this is for 1 to many)
 
+app.config['SQLALCHEMY_DATABASE_URI']=f"sqlite:///{DB_NAME}" this imports the sql databse and gives it a name
+   # Checking if the database exists. If it doesn't, it creates it.
+    if not path.exists('.website/' + DB_NAME):
+        db.create_all(app=app)
 
+from werkzeug.security import generate_password_hash,check_password_hash 
+this is because we cannot save a password as plain text
+
+
+a hashing fuction is a one way fuction that does not have an inverse
+eg
+x -> y
+f(x) = x+1
+this function has an inverse
+this means that if you were given the out put then you can get the input 
+to understand more , read on hashing functions
+
+method='sha256 this is just a type of hashing function '
+read more on it
 

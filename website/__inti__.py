@@ -33,6 +33,7 @@ def create_app():
     return app
 
 def create_database(app):
+   # Checking if the database exists. If it doesn't, it creates it.
     if not path.exists('.website/' + DB_NAME):
         db.create_all(app=app)
         print('Created Database')
