@@ -78,3 +78,10 @@ message flashing
 when using category , you can name the error or success messages how ever you like
 
 
+on model.py 
+to create a class for data to be stored 
+class ..class name(db.model) It will inherit it from db.model
+then add the foreign keys(note this is for 1 to many)
+
+
+
